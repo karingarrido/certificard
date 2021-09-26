@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);   font-family: 'Roboto', sans-serif;
-}
-
-
-.container {
-  margin: 64px;
-  background: #ECF4FF;
-  color: #1C1C1C;
-  border-radius: 15px;
-  padding: 64px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+    -webkit-text-size-adjust: 50%;
+    box-sizing: inherit;
+    height: 100%;
+    width: 100%;
+    background-color: #1fc8db;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    opacity: 0.95;
+    text-align: left;
+    margin: auto;
+    color: #f3f3f3;
+    font-size: 30px;
+    font-weight: 550;
+    padding-top: 105px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cabecalho {
@@ -26,15 +30,70 @@ body {
 .perfil-foto {
   max-width: 160px;
   border-radius: 460px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-button { 
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: #ECF4FF;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #0E1D2F;
+}
+
+
+
+.portfolio {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+
+.container {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 64px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .titulo {
   margin-left: 16px;
+  align-items: left;
 }
 
 .titulo h1 {
@@ -57,48 +116,33 @@ button {
   border: 2px solid #0E1D2F;
 }
 
-.portfolio {
-  margin-top: 34px;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 10px;
-}
-
-.projetos {
-  display: flex;
-  flex-direction: column;
-  max-height: 300px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  padding: 8px 32px;
-  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
-  border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
 .projetos-titulo {
+  alignment-adjust: right;
+  margin-right: 10px;
+  font-size: 34px;
+  padding: 5px;
   list-style: none;
   font-weight: 700;
   font-size: 36px;
 }
 
-
-.conquistas {
-  width:50;
-  height: auto;
-  overflow-y: scroll;
-  scrollbar-width: thin;
+.projetos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 8px 32px;
-  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.conquistasItens {
-  margin-top: 20px;
+
+.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+  
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .portfolio {
+  color: #1C1C1C;
 }
 
 .projetos ul {
@@ -112,34 +156,6 @@ button {
   list-style-type: none;
   font-size: 20px;
   line-height: 2em;
-}
-
-.conquistas ul {
-  list-style: none;
-  padding-left: 0;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.conquistas li {
-  list-style-type: none;
-}
-
-.conquistas img {
-  max-height: 50px
-}
-
-.dark {
-  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
-}
-  
-.dark .container {
-  background: #333439;
-  color: #F6F6F6;
-}
-
-.dark .portfolio {
-  color: #1C1C1C;
 }
 
 .dark .tema button {
